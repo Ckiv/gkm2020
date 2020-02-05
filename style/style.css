@@ -386,7 +386,8 @@ textarea {
     font-family: Gilroy;
     font-size: 30px;
     font-weight: bold;
-    margin-top: 100px;
+    line-height: 50px;
+    margin-top: 90px;
 }
 /* хедер конец */
 /* меню старт */
