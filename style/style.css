@@ -376,126 +376,215 @@ textarea {
 }
 /* шрифты конец */
 /* хедер старт */
-.header {
+.header{
+    background-color: #5281b9;
+}
+.header_wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    border-bottom: solid 1px #000;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 65%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.logo{
+    margin-right: 30px;
 }
 .name_conf h1{
     font-family: Gilroy;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
-    line-height: 50px;
-    margin-top: 90px;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+}
+@media (min-width: 330px) and (max-width: 430px) {
+    .logo{
+        width: 35%;
+    }
+    .name_conf{
+        width: 65%;
+    }
+    .name_conf h1{
+        font-size: 40px;
+    }
+    .logo img {
+        width: 340px
+    }
 }
 /* хедер конец */
 /* меню старт */
-.main_menu {
+.main_menu{
+    background-color: #d1e3f9;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+}
+.menu_wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border-bottom: solid 1px #000;
 }
 .menu {
     display: flex;
     flex-direction: row;
-    margin: 15px 0px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .menu li{
     font-family: Gilroy;
-    font-size: 20px;
-    margin-right: 50px;
+    font-size: 15px;
+    padding: 10px 0 10px 0;
 }
 .menu li:last-child{
     margin-right: 0px;
 }
+.menu li a:hover{
+    background-color: #5281b9;
+}
 .menu li a {
+    padding: 10px 10px 10px 10px;
     text-decoration: none;
     color: #000000;
 }
 /* меню конец */
 /* общее контент начало */
 .content{
+    background-color: #ebf0f4;
+}
+.content_wrapper{
     font-family: Gilroy;
     font-size: 15px;
-    width: 80%;
+    width: 65%;
     margin: 0 auto;
-    margin-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+
 }
-.content h2{
+.content_wrapper h2{
     text-align: center;
     font-size: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+    padding-top: 55px;
+    text-transform: uppercase;
 }
-.content h3{
+.content_wrapper h3{
     text-align: center;
     font-size: 20px;
     margin-bottom: 20px;
 }
+.content_wrapper li, p{
+    line-height: 20px;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
 /* общее контент конец */
 /* о конференции начало */
 .lang_konf, .time_doklad{
-    list-style-type: disc;
-    margin-left: 50px;
+    list-style: decimal;
+    margin-left: 15px;
+    margin-bottom: 15px;
     text-align: justify;
 }
 .sekcii-konf{
-    list-style: decimal;
-    margin-left: 50px;
+    list-style: disc;
+    margin-left: 15px;
+    margin-bottom: 15px;
     text-align: justify;
 }
-.text_conf {
-    padding-bottom: 8px;
+.vaj_link{
+    list-style: disc;
+    margin-left: 15px;
+    margin-bottom: 15px;
     text-align: justify;
 }
+.vaj_link li a{
+    text-decoration: none;
+}
+
 /* о конференции конец */
 /* организационный комитет начало */
 .org_comm, .uch_org_comm, .uch_prog_comm{
     list-style: decimal;
-    margin-left: 50px;
-    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-bottom: 25px;
     text-align: justify;
-}
-.org_comm li, .uch_org_comm li, .uch_prog_comm li{
-    padding-bottom: 7px;
 }
 /* организационный комитет конец */
 /* правила начало */
-.rules_description, .shablon, .rules_instr{
-    text-align: justify;
-    padding-bottom: 7px;
+
+.pred_comm{
+    margin-bottom: 35px;
 }
 .shablon_link{
     text-decoration: none;
 }
 .instrukcii{
     list-style: decimal;
-    margin-left: 50px;
+    margin-left: 15px;
+    margin-bottom: 35px;
     text-align: justify;
-}
-.instrukcii li{
-    padding-bottom: 7px;
 }
 /* правила конец */
-/* документы старт */
+/* информационное сообщение старт */
 .documenrion_description, .first_inf_letter, .second_inf_letter{
     text-align: justify;
-    padding-bottom: 7px;
 }
 .first_inf_letter_spisok, .second_inf_letter_spisok{
-    list-style-type: disc;
-    margin-left: 50px;
+    list-style: disc;
+    margin-left: 15px;
+    margin-bottom: 35px;
     text-align: justify;
-    padding-bottom: 15px;
 }
-.first_inf_letter_spisok li, .second_inf_letter_spisok li{
-    padding-bottom: 7px;
+.first_inf_letter_link, .second_inf_letter_link{
+    text-decoration: none;
 }
-/* документы конец */
+/* информационное сообщение конец */
 /* контакты начало */
 .contacks_description{
     line-height: 20px;
+    display: flex;
+    justify-content: center;
 }
 /* контакты конец */
+/* оргвзнос начало */
+.org_vznos{
+    list-style: disc;
+    margin-left: 15px;
+    margin-bottom: 35px;
+    text-align: justify;
+}
+/* оргвзнос конец*/
+/* даты конференции начало */
+.date_conf{
+    list-style: disc;
+    margin-left: 15px;
+    margin-bottom: 35px;
+    text-align: justify;
+}
+/* даты конференции конец*/
+/* даты конференции начало */
+.photo_palchika{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-top: 55px;
+}
+/* даты конференции конец*/
+/* футер начало */
+.footer{
+    background-color: #d1e3f9;
+    border-top: solid 1px #000;
+}
+.footer_wrapper{
+    font-family: Gilroy;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* футер конец */
