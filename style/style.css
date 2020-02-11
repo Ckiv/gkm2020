@@ -454,17 +454,17 @@ textarea {
     color: #000000;
 }
 @media (min-width: 330px) and (max-width: 500px){
-    .main_menu{
-        display: flex;
-        flex-flow: wrap;
-        justify-content: flex-end;
-    }
     .menu_wrapper{
         flex-direction: column;
+        width: 100%;
+    }
+    .menu_burger_wrapper{
+        display: flex;
+        justify-content: flex-end;
     }
     .menu_burger{
-        width: 50px;
-        height: 50px;
+        width: 30px;
+        height: 30px;
         cursor: pointer;
         background: linear-gradient(to bottom, #000 20%, transparent 21%, transparent 40%, #000 41%, #000 60%, transparent 61%, transparent 80%, #000 81%);
     }
@@ -474,6 +474,14 @@ textarea {
     .menu{
         display: none;
         flex-direction: column;
+        align-items: start;
+    }
+    .menu li{
+        border-bottom: solid 1px #000;
+        width: 100%;
+    }
+    .menu li:last-child{
+        border-bottom: 0px;
     }
 }
 /* меню конец */
@@ -652,6 +660,13 @@ textarea {
     width: 65%;
     margin: 0 auto;
     padding: 40px 0;
+}
+.footer_contacts_address a{
+    color: #5281b9;
+    text-decoration: none;
+}
+.footer_contacts_address a:hover{
+    color: #ad7e46;
 }
 .footer_contacts_phone a{
     color: #5281b9;
