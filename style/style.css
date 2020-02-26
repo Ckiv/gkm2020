@@ -454,34 +454,34 @@ textarea {
     color: #000000;
 }
 @media (min-width: 330px) and (max-width: 500px){
-    .menu_wrapper{
-        flex-direction: column;
-        width: 100%;
+    .menu {
+        display: none;
+        margin-top: 40px;
     }
-    .menu_burger_wrapper{
-        display: flex;
+    .menu_wrapper {
         justify-content: flex-end;
     }
-    .menu_burger{
-        width: 30px;
-        height: 30px;
+    .trigger {
+        display: inline-block;
+        height: 35px;
+        margin: 3px;
         cursor: pointer;
-        background: linear-gradient(to bottom, #000 20%, transparent 21%, transparent 40%, #000 41%, #000 60%, transparent 61%, transparent 80%, #000 81%);
+        padding-right: 5px;
     }
-    .menu_burger_active{
-        background: linear-gradient(45deg, transparent 45%, #000 46%, #000 55%, transparent 56%), linear-gradient(-45deg, transparent 45%, #000 46%, #000 55%, transparent 56%);
+    .trigger i {
+        display: block;
+        width: 30px;
+        height: 6px;
+        margin: 4px auto;
+        background: #222;
     }
-    .menu{
-        display: none;
+    .show {
+        display: flex;
         flex-direction: column;
-        align-items: start;
-    }
-    .menu li{
-        border-bottom: solid 1px #000;
+        justify-content: flex-start;
         width: 100%;
-    }
-    .menu li:last-child{
-        border-bottom: 0px;
+        align-items: flex-start;
+        padding-left: 15px;
     }
 }
 /* меню конец */
